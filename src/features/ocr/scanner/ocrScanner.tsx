@@ -67,13 +67,11 @@ const OCRScanner: React.FC = () => {
   return (
     <div className="w-full md:w-auto md:mx-auto p-4 justify-center items-center">
       <h2 className="text-xl font-semibold">Upload your identity document to proceed</h2>
-      <div className="h-48">
-        {uploadedImage ? (
-          <img src={uploadedImage} alt={file.name} width={180} className="m-auto py-10" />
-        ) : (
-          <img src={idPreview} alt="ID Preview" width={200} className="m-auto" />
-        )}
-      </div>
+      {uploadedImage ? (
+        <img src={uploadedImage} alt={file.name} width={180} className="m-auto py-10" />
+      ) : (
+        <img src={idPreview} alt="ID Preview" width={200} className="m-auto" />
+      )}
       <form onSubmit={handleSubmit} encType="multipart/form-data" className="space-y-4">
         <div>
           <div className="flex flex-row items-center gap-2">
