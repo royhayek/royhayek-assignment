@@ -14,6 +14,9 @@ To run the website locally, use the following command:
 npm run dev
 ```
 
+## OCR API
+This project uses the OCR API from Nanonets (https://nanonets.com).
+
 ## Modifying Credentials
 
 To modify the credentials (API URL, API key, and Model ID), edit the .env file.
